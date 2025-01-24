@@ -1,7 +1,7 @@
 import streamlit as st
 import n1tk
 from transformer import pipline
-from n1tk.corpus import word_tokenize
+from nltk.corpus import word_tokenize
 
 chatbot = pipline("text-generation", model="distilgpt2")
 
